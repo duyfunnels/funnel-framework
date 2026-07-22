@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   ArrowRight,
@@ -21,11 +20,7 @@ import ebookMockup from "@/assets/ebook-mockup.png";
 import testimonial1 from "@/assets/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonial-2.jpg";
 
-export const Route = createFileRoute("/")({
-  component: SqueezePage,
-});
-
-function SqueezePage() {
+export default function App() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Header />
@@ -74,7 +69,7 @@ function Header() {
 /* ---------- Hero (P1) ---------- */
 function Hero() {
   return (
-    <section id="top" className="relative -mt-24 overflow-hidden pt-24 bg-hero">
+    <section id="top" className="relative overflow-hidden bg-hero">
       <div className="absolute inset-0 bg-grid opacity-40" />
       <div className="absolute inset-x-0 top-0 h-[600px] bg-[radial-gradient(ellipse_at_top,_var(--brand)_/_0.15,_transparent_60%)]" />
 
