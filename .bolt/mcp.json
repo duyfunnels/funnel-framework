@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "instatic": {
-      "enabled": false
+      "enabled": true
     }
   }
 }
